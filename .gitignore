@@ -44,4 +44,4 @@ dist/
 nbdist/
 .nb-gradle/
 
-/app/elements/socyti-elements.vulcanized.html
+/app/elements/s-elements.vulcanized.html
