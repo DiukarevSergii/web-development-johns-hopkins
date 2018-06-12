@@ -10,7 +10,8 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     var yeomanConfig = {
-        app: 'app',
+        // app: 'app',
+        app: 'module2-solution',
         dist: 'dist'
     };
 
@@ -19,7 +20,7 @@ module.exports = function (grunt) {
         watch: {
             options: {
                 nospawn: true,
-                livereload: { liveCSS: false }
+                livereload: {liveCSS: false}
             },
             livereload: {
                 options: {
@@ -36,7 +37,7 @@ module.exports = function (grunt) {
                 ]
             },
             js: {
-                files: ['<%= yeoman.app %>/scripts/**/*.js','<%= yeoman.app %>/elements/SBehaviors.js'],
+                files: ['<%= yeoman.app %>/scripts/**/*.js', '<%= yeoman.app %>/elements/SBehaviors.js'],
                 tasks: ['browserify:server']
             },
             styles: {
@@ -53,8 +54,8 @@ module.exports = function (grunt) {
                 map: false,
                 processors: [
                     require('pixrem')(),
-                    require('autoprefixer')({ browsers: ['last 4 versions', 'not ie < 11'] }),
-                    require('cssnano')({ zindex: false })
+                    require('autoprefixer')({browsers: ['last 4 versions', 'not ie < 11']}),
+                    require('cssnano')({zindex: false})
                 ]
             },
             watch: {
@@ -244,7 +245,7 @@ module.exports = function (grunt) {
                     transform: ['babelify']
                 },
                 files: {
-                    '.tmp/scripts/app.js' : ['./<%= yeoman.app %>/scripts/s.js']
+                    '.tmp/scripts/app.js': ['./<%= yeoman.app %>/scripts/s.js']
                 }
             },
             dist: {
