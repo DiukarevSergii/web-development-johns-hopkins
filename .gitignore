@@ -36,6 +36,7 @@ $RECYCLE.BIN/
 *.lnk
 /app/scripts/config.js
 
+app/
 nbproject
 nbproject/private/
 build/
