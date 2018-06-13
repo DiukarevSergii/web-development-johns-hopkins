@@ -11,6 +11,7 @@ h1 {
     margin-bottom: 15px;
     color: #000000;
     text-align: center;
+    font-size: 3.5em;
 }
 
 p {
@@ -18,14 +19,24 @@ p {
     height: 100%;
     padding-left: 10px;
     padding-right: 5px;
+    padding-bottom: 10px;
     color: white;
-    /*position: relative;*/
     text-align: justify;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
+
+/*.center {*/
+    /*margin: auto;*/
+    /*width: 50%;*/
+    /*border: 3px solid green;*/
+    /*padding: 10px;*/
+/*}*/
 
 .content {
     background-color: #999999;
+    border: 2px solid black;
+    /*margin-bottom: -10px;*/
 }
 
 .text {
@@ -43,6 +54,7 @@ p {
     text-transform: capitalize;
     margin-right: -2px;
     margin-top: -2px;
+    margin-bottom: 10px;
     font-size: 2em;
 }
 
@@ -61,14 +73,12 @@ p {
 /* Simple Responsive Framework. */
 .row {
     width: 100%;
-    /*text-align: center;*/
 }
 
-/********** Large devices only **********/
-@media (min-width: 1515px) {
+/********** Desktop version **********/
+@media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
-        border: 2px solid black;
         margin: 10px;
     }
 
@@ -121,12 +131,12 @@ p {
     }
 }
 
-/********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1515px) {
+/********** Tablet version **********/
+@media (min-width: 768px) and (max-width: 991px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
-        border: 2px solid black;
         margin: 10px;
+        /*width: inherit;*/
     }
 
     .col-md-1 {
@@ -146,7 +156,7 @@ p {
     }
 
     .col-md-5 {
-        width: 39.66%;
+        width: 47.88%;
     }
 
     .col-md-6 {
@@ -174,15 +184,14 @@ p {
     }
 
     .col-md-12 {
-        width: 98%;
+        width: 97.9%;
     }
 }
 
-/********** Small devices only **********/
-@media (max-width: 1016px) {
+/********** Mobile version **********/
+@media (max-width: 767px) {
     .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
         float: left;
-        border: 2px solid black;
         margin: 10px;
     }
 
