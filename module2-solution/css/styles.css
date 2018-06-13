@@ -29,32 +29,49 @@ p {
 }
 
 .text {
-    color: darkgreen;
+    color: black;
     clear: right;
 }
 
-.title * {
-    background-color: darkred;
-    width: 15%;
-    height: 15%;
+.title p {
+    width:  4em;
+    height: 2em;
     float: right;
-    color: red;
-    border: 1px black;
+    color: black;
+    border: 2px solid black;
+    text-align: center;
+    text-transform: capitalize;
+    margin-right: -2px;
+    margin-top: -2px;
+    font-size: 2em;
     /*clear: top;*/
     /*position: absolute;*/
+}
+
+#rice.title * {
+    background-color: #90EE90;
+}
+
+#potato.title * {
+    background-color: #00B7FF;
+}
+
+#pasta.title * {
+    background-color: aquamarine;
 }
 
 /* Simple Responsive Framework. */
 .row {
     width: 100%;
-    background-color: #90EE90;
+    text-align: center;
+    /*margin-left: -100px;*/
 }
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
-        border: 1px solid black;
+        border: 2px solid black;
         margin: 10px;
     }
 
@@ -111,7 +128,7 @@ p {
 @media (min-width: 992px) and (max-width: 1199px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
-        border: 1px solid black;
+        border: 2px solid black;
         margin: 10px;
     }
 
