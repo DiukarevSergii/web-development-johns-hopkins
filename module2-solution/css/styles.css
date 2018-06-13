@@ -44,8 +44,6 @@ p {
     margin-right: -2px;
     margin-top: -2px;
     font-size: 2em;
-    /*clear: top;*/
-    /*position: absolute;*/
 }
 
 #rice.title * {
@@ -57,18 +55,17 @@ p {
 }
 
 #pasta.title * {
-    background-color: aquamarine;
+    background-color: #7FFFD4;
 }
 
 /* Simple Responsive Framework. */
 .row {
     width: 100%;
-    text-align: center;
-    /*margin-left: -100px;*/
+    /*text-align: center;*/
 }
 
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 1515px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
         border: 2px solid black;
@@ -76,23 +73,23 @@ p {
     }
 
     .col-lg-1 {
-        width: 8.33%;
+        width: 8%;
     }
 
     .col-lg-2 {
-        width: 16.66%;
+        width: 16%;
     }
 
     .col-lg-3 {
-        width: 25%;
+        width: 24%;
     }
 
     .col-lg-4 {
-        width: 33.33%;
+        width: 32%;
     }
 
     .col-lg-5 {
-        width: 41.66%;
+        width: 41%;
     }
 
     .col-lg-6 {
@@ -100,32 +97,32 @@ p {
     }
 
     .col-lg-7 {
-        width: 58.33%;
+        width: 58%;
     }
 
     .col-lg-8 {
-        width: 66.66%;
+        width: 66%;
     }
 
     .col-lg-9 {
-        width: 74.99%;
+        width: 74%;
     }
 
     .col-lg-10 {
-        width: 83.33%;
+        width: 83%;
     }
 
     .col-lg-11 {
-        width: 91.66%;
+        width: 91%;
     }
 
     .col-lg-12 {
-        width: 100%;
+        width: 98%;
     }
 }
 
 /********** Medium devices only **********/
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1515px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
         border: 2px solid black;
@@ -177,6 +174,63 @@ p {
     }
 
     .col-md-12 {
+        width: 98%;
+    }
+}
+
+/********** Small devices only **********/
+@media (max-width: 1016px) {
+    .col-sd-1, .col-sd-2, .col-sd-3, .col-sd-4, .col-sd-5, .col-sd-6, .col-sd-7, .col-sd-8, .col-sd-9, .col-sd-10, .col-sd-11, .col-sd-12 {
+        float: left;
+        border: 2px solid black;
+        margin: 10px;
+    }
+
+    .col-sd-1 {
+        width: 6.33%;
+    }
+
+    .col-sd-2 {
+        width: 14.66%;
+    }
+
+    .col-sd-3 {
+        width: 23%;
+    }
+
+    .col-sd-4 {
+        width: 31.33%;
+    }
+
+    .col-sd-5 {
+        width: 39.66%;
+    }
+
+    .col-sd-6 {
+        width: 48%;
+    }
+
+    .col-sd-7 {
+        width: 56.33%;
+    }
+
+    .col-sd-8 {
+        width: 64.66%;
+    }
+
+    .col-sd-9 {
+        width: 72.99%;
+    }
+
+    .col-sd-10 {
+        width: 81.33%;
+    }
+
+    .col-sd-11 {
+        width: 89.66%;
+    }
+
+    .col-sd-12 {
         width: 98%;
     }
 }
