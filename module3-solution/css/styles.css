@@ -4,13 +4,6 @@
 body {
     font-family: 'Pacifico', cursive;
 }
-h2 {
-    margin-top: 22px;
-    margin-bottom: 15px;
-    color: #000000;
-    text-align: center;
-    font-size: 3em;
-}
 p {
     width: 100%;
     height: 100%;
@@ -22,10 +15,23 @@ p {
     margin-top: 10px;
     margin-bottom: 0;
 }
+#header{
+    margin-top: 22px;
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 3em;
+}
 .navbar-default .navbar-brand {
     color: black;
     font-size: 2em;
     padding-left: 25px;
+    min-width: 240px;
+
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -40px;
+    margin-bottom: 10px;
 }
 .header {
     background-color: #999999;
@@ -58,6 +64,14 @@ p {
     padding-top: 5px;
     font-size: 2em;
 }
+.row {
+    margin: 10px;
+}
+#nav-list a {
+    color: black;
+    text-align: center;
+}
+
 #rice.title * {
     background-color: #90EE90;
 }
@@ -67,15 +81,60 @@ p {
 #pasta.title * {
     background-color: #7FFFD4;
 }
-.row {
-    margin: 10px;
-}
 
-@media (max-width: 767px) {
-    h2 {
+@media (min-width: 235px) and (max-width: 767px) {
+    #header {
         font-size: 2em;
     }
     .title p {
         font-size: 1.5em;
+    }
+}
+
+@media (min-width: 175px) and (max-width: 234px) {
+    #header {
+        font-size: 1.5em;
+    }
+    .title p {
+        font-size: 1.2em;
+        margin: -20px 0;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 174px) {
+    #header {
+        font-size: 1.3em;
+        margin-bottom: -10px;
+    }
+    .title p {
+        font-size: 1.2em;
+    }
+    .navbar-default .navbar-brand {
+        font-size: 1.4em;
+        padding-left: 5px;
+        text-align: left;
+        margin-left: 10%;
+    }
+    .navbar-header button.navbar-toggle {
+        position: relative;
+        left: 15%;
+        margin-right: 15%;
+        margin-top: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        float: left;
+        margin-left: 15%;
+        width: 70%;
+        text-align: center;
+    }
+    .content {
+        margin-left: -20px;
+        margin-right: -20px;
     }
 }
