@@ -15,78 +15,75 @@ p {
     margin-top: 10px;
     margin-bottom: 0;
 }
-#header{
-    margin-top: 22px;
-    margin-bottom: 15px;
-    color: #000000;
-    font-size: 3em;
+li a{
+    margin: 5px;
+    font-size: 1.4em;
 }
-.navbar-default .navbar-brand {
+hr {
+    padding: 0;
+    margin: 0;
+}
+.content h3 {
+    width:  100%;
     color: black;
-    font-size: 2em;
-    padding-left: 25px;
-    min-width: 240px;
-
-}
-.navbar-header button.navbar-toggle {
-    clear: both;
-    margin-top: -40px;
-    margin-bottom: 10px;
-}
-.header {
-    background-color: #999999;
-    min-height: 60px;
-    margin: -11px -12px;
-    width: 105%;
-    border: 2px solid black;
-}
-.content {
-    min-width: 120px;
-    background-color: #999999;
-    border: 1px solid black;
-    margin: 10px 0;
-}
-.text {
-    color: black;
-    clear: right;
-}
-.title p {
-    width:  4em;
-    height: 2em;
-    float: right;
-    color: black;
-    border: 1px solid black;
     text-align: center;
     text-transform: capitalize;
     margin-right: -1px;
     margin-top: -1px;
     margin-bottom: 10px;
     padding-top: 5px;
+    font-size: 3em;
+}
+.navbar {
+    background-color: #9d9d9d;
+}
+.navbar-default .navbar-brand {
+    color: black;
     font-size: 2em;
+    padding-left: 25px;
+    min-width: 240px;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    background-color: ghostwhite;
+}
+.content {
+    min-width: 120px;
+    min-height: 700px;
+    background-color: #9d9d9d;
+    margin: 10px 0;
+}
+.text {
+    color: black;
+    clear: right;
 }
 .row {
     margin: 10px;
+}
+#header{
+    margin-top: 22px;
+    margin-bottom: 15px;
+    color: #000000;
+    font-size: 3em;
+}
+#nav-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    background-color: ghostwhite;
 }
 #nav-list a {
     color: black;
     text-align: center;
 }
 
-#rice.title * {
-    background-color: #90EE90;
-}
-#potato.title * {
-    background-color: #00B7FF;
-}
-#pasta.title * {
-    background-color: #7FFFD4;
-}
-
 @media (min-width: 235px) and (max-width: 767px) {
     #header {
         font-size: 2em;
     }
-    .title p {
+    .title {
         font-size: 1.5em;
     }
 }
@@ -95,7 +92,7 @@ p {
     #header {
         font-size: 1.5em;
     }
-    .title p {
+    .title {
         font-size: 1.2em;
         margin: -20px 0;
     }
@@ -109,7 +106,7 @@ p {
         font-size: 1.3em;
         margin-bottom: -10px;
     }
-    .title p {
+    .title{
         font-size: 1.2em;
     }
     .navbar-default .navbar-brand {
